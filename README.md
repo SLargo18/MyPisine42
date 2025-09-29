@@ -20,30 +20,29 @@ These projects cover the most fundamental aspects of C programming. They include
 ## 🖥️ shell00: Basic Unix Shell
 
 ### 📌 Description:
-In this project, I created a basic Unix shell in C that simulates a simplified command line interface. The shell can execute commands like `ls`, `pwd`, and others by using **fork** and **exec** system calls. It also handles basic error checking and waits for the processes to finish.
+In **shell00**, I implemented a basic Unix shell in C, following the project guidelines. The goal was to create a simple shell that could execute basic commands (like `ls`, `pwd`, `echo`, etc.) by reading user input and executing the appropriate commands using **system calls**. The shell also includes basic error handling to ensure that commands are properly executed.
 
-The goal was to understand how the Unix shell works behind the scenes and practice working with processes in C.
+This project helped me understand how a shell works on a fundamental level, including basic command execution and error checking.
 
 ### 🛠️ Skills Developed:
-- Process management in C using `fork`, `exec`, and `wait`.
-- Implementing a command execution environment.
-- Handling basic shell commands and user input.
-- Basic error handling and exit status management.
+- Reading user input and parsing commands.
+- Executing basic shell commands.
+- Handling basic error checking and user input validation.
+- Understanding the basic structure of a Unix shell.
 
 ---
 
 ## 🖥️ shell01: Advanced Unix Shell
 
 ### 📌 Description:
-In **shell01**, the focus was on expanding the functionality of the shell to handle more complex features like **pipes**, **input/output redirection**, and **background processes**.
+In **shell01**, I expanded the basic shell from **shell00** to include additional functionality like input/output redirection (using `>` and `<`). The shell can now execute commands while redirecting their input or output to/from files. The project involved parsing user input to detect these redirections and adjust the behavior of the shell accordingly.
 
-The shell can now execute commands like `ls | grep file`, redirect outputs to files (`>`, `<`), and manage background processes using the `&` operator. The project deepened my understanding of Unix system calls, process management, and I/O redirection.
+This project helped me improve my understanding of how to manage file descriptors and implement simple redirection in a shell.
 
 ### 🛠️ Skills Developed:
-- Advanced process management using `fork` and `exec`.
-- Implementing pipes (`|`) and redirections (`>`, `<`).
-- Managing background processes with `&`.
-- Handling errors and edge cases in a Unix-like environment.
-- Implementing a more modular shell design.
+- Implementing input/output redirection (`>`, `<`).
+- Parsing user input for redirection operators.
+- Handling file descriptors for redirection.
+- Improving error handling and managing edge cases.
 
 ---
